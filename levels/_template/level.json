@@ -1,0 +1,56 @@
+{
+  "title": "Назва рівня",
+  "description": "Короткий опис для каталогу.",
+  "howto": "Необовʼязково: підказка по керуванню саме для цього рівня.",
+  "author": "Твоє імʼя",
+  "difficulty": 1,
+  "order": 100,
+  "icon": "🎞️",
+  "charSlots": 2,
+  "hint": "Показується, коли сюжет не збігся з жодною кінцівкою.",
+
+  "frames": [
+    { "title": "Кадр 1" },
+    { "title": "Кадр 2" },
+    { "title": "Кадр 3" }
+  ],
+
+  "characters": [
+    { "id": "hero",    "name": "Герой",  "emoji": "🦸" },
+    { "id": "villain", "name": "Лиходій", "emoji": "🦹" }
+  ],
+
+  "settings": [
+    { "id": "city",  "name": "Місто", "emoji": "🏙️", "color": "linear-gradient(160deg,#3b4a7a,#1f2644)" },
+    { "id": "roof",  "name": "Дах",   "emoji": "🌃", "color": "linear-gradient(160deg,#5a3b7a,#24143a)" }
+  ],
+
+  "captions": [
+    { "frame": 0, "setting": "city", "characters": ["hero"], "text": "Підпис під кадром, коли збігається така розстановка." }
+  ],
+
+  "endings": [
+    {
+      "id": "good",
+      "title": "Хороша кінцівка",
+      "text": "Що сталося в цій кінцівці.",
+      "clue": "Необовʼязково: натяк, поки кінцівку не знайдено.",
+      "frames": [
+        { "setting": "city", "characters": ["hero"] },
+        null,
+        { "setting": "roof", "characters": ["hero", "villain"] }
+      ]
+    },
+    {
+      "id": "secret",
+      "title": "Секретна кінцівка",
+      "hidden": true,
+      "text": "Поки не знайдена, у списку показується як «???».",
+      "frames": [
+        null,
+        { "characters": ["villain"], "exact": true },
+        null
+      ]
+    }
+  ]
+}

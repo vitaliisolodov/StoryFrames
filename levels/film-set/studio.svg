@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3a67"/>
+      <stop offset="1" stop-color="#171f3d"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#fff3c4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <rect y="420" width="800" height="180" fill="#0f1428"/>
+  <rect y="418" width="800" height="6" fill="#ffb547" opacity=".6"/>
+  <polygon points="170,70 90,430 250,430" fill="url(#beam)"/>
+  <polygon points="630,70 550,430 710,430" fill="url(#beam)"/>
+  <rect x="140" y="40" width="60" height="38" rx="6" fill="#0b0e1e"/>
+  <rect x="600" y="40" width="60" height="38" rx="6" fill="#0b0e1e"/>
+  <rect x="360" y="110" width="80" height="12" fill="#0b0e1e"/>
+  <g fill="#0b0e1e">
+    <rect x="60" y="360" width="10" height="64"/>
+    <rect x="730" y="360" width="10" height="64"/>
+  </g>
+  <rect x="330" y="470" width="140" height="70" rx="6" fill="#ffb547" opacity=".12"/>
+</svg>

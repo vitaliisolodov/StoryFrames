@@ -1,0 +1,12 @@
+{
+  "name": "kadry-istorii",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-index.mjs",
+    "check": "node scripts/build-index.mjs --strict",
+    "test": "node scripts/test-logic.mjs",
+    "serve": "node scripts/build-index.mjs && npx --yes serve .",
+    "editor": "node scripts/editor-server.mjs"
+  }
+}

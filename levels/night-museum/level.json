@@ -1,0 +1,531 @@
+{
+  "title": "Ніч у музеї",
+  "description": "Сторож, злодійка, кіт і привид, і всі в одному музеї до світанку. Хто винесе діамант «Північна зоря»?",
+  "howto": "Для кожного з шести кадрів обери декорацію й до двох персонажів: перетягни їх мишею або торкнись предмета внизу, потім кадру. Торкнись заповненої комірки, щоб прибрати її.",
+  "author": "Claude",
+  "difficulty": 2,
+  "order": 30,
+  "icon": "🏛️",
+  "cover": "cover.svg",
+  "charSlots": 2,
+  "hint": "Усе вирішують кадри «Тінь у залі», «Сховище» і «Світанок»: хто, де і з ким опиниться в них?",
+  "frames": [
+    {
+      "title": "Закриття"
+    },
+    {
+      "title": "Обхід"
+    },
+    {
+      "title": "Тінь у залі"
+    },
+    {
+      "title": "Сховище"
+    },
+    {
+      "title": "Небезпека"
+    },
+    {
+      "title": "Світанок"
+    }
+  ],
+  "characters": [
+    {
+      "id": "guard",
+      "name": "Сторож Петро",
+      "emoji": "💂",
+      "image": "guard.svg"
+    },
+    {
+      "id": "thief",
+      "name": "Злодійка Мара",
+      "emoji": "🥷",
+      "image": "thief.svg"
+    },
+    {
+      "id": "cat",
+      "name": "Кіт Мур",
+      "emoji": "🐈",
+      "image": "cat.svg"
+    },
+    {
+      "id": "curator",
+      "name": "Пані куратор",
+      "emoji": "🧐",
+      "image": "curator.svg"
+    },
+    {
+      "id": "ghost",
+      "name": "Привид",
+      "emoji": "👻",
+      "image": "ghost.svg"
+    }
+  ],
+  "settings": [
+    {
+      "id": "lobby",
+      "name": "Вестибюль",
+      "emoji": "🏛️",
+      "image": "lobby.svg",
+      "color": "linear-gradient(160deg,#3b4a7a,#1f2644)"
+    },
+    {
+      "id": "hall",
+      "name": "Зала експонатів",
+      "emoji": "🖼️",
+      "image": "hall.svg",
+      "color": "linear-gradient(160deg,#2f3d6b,#141a38)"
+    },
+    {
+      "id": "vault",
+      "name": "Сховище",
+      "emoji": "🔐",
+      "image": "vault.svg",
+      "color": "linear-gradient(160deg,#4a2f5c,#1c1030)"
+    },
+    {
+      "id": "roof",
+      "name": "Дах",
+      "emoji": "🌃",
+      "image": "roof.svg",
+      "color": "linear-gradient(160deg,#7a4b6b,#2a1d4a)"
+    },
+    {
+      "id": "office",
+      "name": "Кабінет куратора",
+      "emoji": "🗂️",
+      "image": "office.svg",
+      "color": "linear-gradient(160deg,#8a5a2b,#3a2410)"
+    }
+  ],
+  "captions": [
+    {
+      "frame": 0,
+      "setting": "lobby",
+      "characters": [
+        "guard"
+      ],
+      "text": "Сторож Петро замикає двері. Музей на ніч — його королівство."
+    },
+    {
+      "frame": 0,
+      "setting": "office",
+      "characters": [
+        "curator"
+      ],
+      "text": "Пані куратор востаннє перевіряє сигналізацію й гасить світло."
+    },
+    {
+      "frame": 0,
+      "setting": "lobby",
+      "characters": [
+        "thief"
+      ],
+      "text": "Хтось не пішов додому разом із відвідувачами…"
+    },
+    {
+      "frame": 0,
+      "setting": "hall",
+      "characters": [
+        "cat"
+      ],
+      "text": "Кіт Мур давно вважає цей музей своїм."
+    },
+    {
+      "frame": 1,
+      "setting": "hall",
+      "characters": [
+        "guard"
+      ],
+      "text": "Обхід починається. Кроки лунають у порожніх залах."
+    },
+    {
+      "frame": 1,
+      "setting": "hall",
+      "characters": [
+        "ghost"
+      ],
+      "text": "Портрети шепочуться: сьогодні привид у гуморі."
+    },
+    {
+      "frame": 1,
+      "setting": "vault",
+      "characters": [
+        "thief"
+      ],
+      "text": "Замок піддається швидше, ніж Мара сподівалась."
+    },
+    {
+      "frame": 2,
+      "setting": "hall",
+      "characters": [
+        "thief"
+      ],
+      "text": "Тінь ковзає повз полотна просто до сховища."
+    },
+    {
+      "frame": 2,
+      "setting": "hall",
+      "characters": [
+        "ghost"
+      ],
+      "text": "Холодний протяг. У залі стало занадто тихо."
+    },
+    {
+      "frame": 2,
+      "setting": "hall",
+      "characters": [
+        "guard"
+      ],
+      "text": "Петро позіхає й нічого не помічає."
+    },
+    {
+      "frame": 2,
+      "setting": "hall",
+      "characters": [
+        "cat"
+      ],
+      "text": "Кіт Мур стежить за кимось у темряві."
+    },
+    {
+      "frame": 3,
+      "setting": "vault",
+      "characters": [
+        "thief"
+      ],
+      "text": "Діамант «Північна зоря» лежить на оксамиті. Лишилося простягнути руку."
+    },
+    {
+      "frame": 3,
+      "setting": "vault",
+      "characters": [
+        "thief",
+        "guard"
+      ],
+      "text": "Промінь ліхтаря: «Стояти!»"
+    },
+    {
+      "frame": 3,
+      "setting": "vault",
+      "characters": [
+        "thief",
+        "cat"
+      ],
+      "text": "Мур муркоче просто над вухом злодійки… і дзвіночок видає її."
+    },
+    {
+      "frame": 3,
+      "setting": "vault",
+      "characters": [
+        "cat"
+      ],
+      "text": "Мур обережно тягне лапою блискучу цяцьку."
+    },
+    {
+      "frame": 3,
+      "setting": "vault",
+      "characters": [
+        "curator",
+        "thief"
+      ],
+      "text": "«Ви запізнилися на п’ять хвилин», — каже пані куратор."
+    },
+    {
+      "frame": 3,
+      "setting": "lobby",
+      "characters": [
+        "guard"
+      ],
+      "text": "Петро дрімає за стійкою. Усе ж спокійно."
+    },
+    {
+      "frame": 4,
+      "setting": "hall",
+      "characters": [
+        "ghost",
+        "thief"
+      ],
+      "text": "Зі стіни виходить привид. Мара забула, як бігти."
+    },
+    {
+      "frame": 4,
+      "setting": "vault",
+      "characters": [
+        "thief"
+      ],
+      "text": "Лазерні промені гаснуть один за одним."
+    },
+    {
+      "frame": 5,
+      "setting": "roof",
+      "characters": [
+        "thief"
+      ],
+      "text": "На даху світанок, вітер і жодних слідів."
+    },
+    {
+      "frame": 5,
+      "setting": "roof",
+      "characters": [
+        "cat"
+      ],
+      "text": "Кіт сидить на даху з діамантом і не збирається ділитися."
+    },
+    {
+      "frame": 5,
+      "setting": "roof",
+      "characters": [
+        "curator",
+        "thief"
+      ],
+      "text": "Двоє на даху ділять здобич. Музей так і не дізнається."
+    },
+    {
+      "frame": 5,
+      "setting": "lobby",
+      "characters": [
+        "guard",
+        "thief"
+      ],
+      "text": "Наручники клацають під першими променями сонця."
+    },
+    {
+      "frame": 5,
+      "setting": "lobby",
+      "characters": [
+        "guard",
+        "cat"
+      ],
+      "text": "Петро вдячно чухає кота за вухом."
+    },
+    {
+      "frame": 5,
+      "setting": "lobby",
+      "characters": [
+        "ghost"
+      ],
+      "text": "Музей мовчить. Тепер це знову його домівка."
+    },
+    {
+      "frame": 5,
+      "setting": "office",
+      "characters": [
+        "curator",
+        "guard"
+      ],
+      "text": "Пані куратор приймає звіт: «Ніч минула спокійно»."
+    }
+  ],
+  "endings": [
+    {
+      "id": "perfect-heist",
+      "title": "Ідеальна крадіжка",
+      "text": "Мара пройшла крізь музей, як тінь, винесла «Північну зорю» і розчинилась у світанку. Уранці в газетах писатимуть про загадку без підозрюваних.",
+      "clue": "Тінь у залі, діамант наодинці й дах на світанку: жодних свідків.",
+      "frames": [
+        null,
+        null,
+        {
+          "setting": "hall",
+          "characters": [
+            "thief"
+          ]
+        },
+        {
+          "setting": "vault",
+          "characters": [
+            "thief"
+          ],
+          "exact": true
+        },
+        null,
+        {
+          "setting": "roof",
+          "characters": [
+            "thief"
+          ],
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "caught",
+      "title": "Спіймана на гарячому",
+      "text": "Петро все-таки прокинувся вчасно. Мару знайшли просто біля діаманта й провели до виходу, поки музей ще спав.",
+      "clue": "Хто має бути поруч зі злодійкою в сховищі?",
+      "frames": [
+        null,
+        null,
+        null,
+        {
+          "setting": "vault",
+          "characters": [
+            "thief",
+            "guard"
+          ]
+        },
+        null,
+        {
+          "setting": "lobby",
+          "characters": [
+            "guard",
+            "thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cat-hero",
+      "title": "Кіт-рятівник",
+      "text": "Дзвіночок Мура зрадив злодійку в найгірший момент. Сторож прокинувся й упіймав її, а кіт отримав вечерю з тунця й вічну славу в музейній охороні.",
+      "clue": "Іноді найкращий охоронець має чотири лапи.",
+      "frames": [
+        null,
+        null,
+        {
+          "setting": "hall",
+          "characters": [
+            "cat"
+          ]
+        },
+        {
+          "setting": "vault",
+          "characters": [
+            "thief",
+            "cat"
+          ]
+        },
+        null,
+        {
+          "setting": "lobby",
+          "characters": [
+            "guard",
+            "cat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiet-night",
+      "title": "Ніч без пригод",
+      "text": "Нічого не сталося. Петро обійшов зали, випив чай, а вранці пані куратор записала в журналі: «Усе тихо». Іноді найкраща історія — та, якої не було.",
+      "clue": "А що, як нікому нічого не робити в сховищі?",
+      "frames": [
+        null,
+        null,
+        {
+          "setting": "hall",
+          "characters": [
+            "guard"
+          ]
+        },
+        {
+          "setting": "lobby",
+          "characters": [
+            "guard"
+          ]
+        },
+        null,
+        {
+          "setting": "office",
+          "characters": [
+            "curator",
+            "guard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghost-museum",
+      "title": "Музей належить привиду",
+      "text": "Привид вийшов зі стіни саме тоді, коли Мара тягнулась до діаманта. Вона вилетіла на вулицю швидше за власну тінь, і більше в цьому музеї не з’являлась. А привид знову залишився єдиним господарем.",
+      "clue": "Інколи в залі буває хтось, кого не видно охороні.",
+      "hidden": true,
+      "frames": [
+        null,
+        null,
+        {
+          "setting": "hall",
+          "characters": [
+            "ghost"
+          ],
+          "exact": true
+        },
+        null,
+        {
+          "setting": "hall",
+          "characters": [
+            "ghost",
+            "thief"
+          ]
+        },
+        {
+          "setting": "lobby",
+          "characters": [
+            "ghost"
+          ],
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "inside-job",
+      "title": "Свій серед своїх",
+      "text": "Пані куратор давно знала про діамант, про сейф і про Мару. Бо сама подзвонила їй і запропонувала розділити здобич навпіл.",
+      "clue": "Чому куратор не пішла додому, а записалась у кабінеті ще до закриття?",
+      "hidden": true,
+      "frames": [
+        {
+          "setting": "office",
+          "characters": [
+            "curator"
+          ]
+        },
+        null,
+        null,
+        {
+          "setting": "vault",
+          "characters": [
+            "curator",
+            "thief"
+          ]
+        },
+        null,
+        {
+          "setting": "roof",
+          "characters": [
+            "curator",
+            "thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cat-thief",
+      "title": "Кіт і діамант",
+      "text": "Мур давно вирішив, що блискуче належить йому. Уранці сторож шукав діамант по всьому музею, а кіт гордо спав на даху, поклавши лапу на «Північну зорю».",
+      "clue": "Подивись, що відбувається, коли в сховищі немає нікого, окрім кота.",
+      "hidden": true,
+      "frames": [
+        null,
+        null,
+        null,
+        {
+          "setting": "vault",
+          "characters": [
+            "cat"
+          ],
+          "exact": true
+        },
+        null,
+        {
+          "setting": "roof",
+          "characters": [
+            "cat"
+          ],
+          "exact": true
+        }
+      ]
+    }
+  ]
+}

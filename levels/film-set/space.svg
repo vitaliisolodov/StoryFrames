@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx=".3" cy=".25" r="1">
+      <stop offset="0" stop-color="#2a1b5e"/>
+      <stop offset="1" stop-color="#06040f"/>
+    </radialGradient>
+    <radialGradient id="planet" cx=".35" cy=".35" r=".8">
+      <stop offset="0" stop-color="#ff9ad1"/>
+      <stop offset="1" stop-color="#6a2fa0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g fill="#fff">
+    <circle cx="60" cy="80" r="2"/><circle cx="150" cy="200" r="1.5"/><circle cx="260" cy="60" r="2.2"/>
+    <circle cx="340" cy="150" r="1.4"/><circle cx="430" cy="40" r="1.8"/><circle cx="520" cy="120" r="1.5"/>
+    <circle cx="700" cy="70" r="2"/><circle cx="760" cy="210" r="1.6"/><circle cx="90" cy="330" r="1.8"/>
+    <circle cx="200" cy="450" r="1.4"/><circle cx="380" cy="360" r="1.6"/><circle cx="470" cy="520" r="2"/>
+    <circle cx="640" cy="440" r="1.5"/><circle cx="730" cy="560" r="1.8"/><circle cx="40" cy="520" r="1.4"/>
+  </g>
+  <ellipse cx="560" cy="270" rx="190" ry="40" fill="none" stroke="#ffd1ec" stroke-width="10" opacity=".45" transform="rotate(-14 560 270)"/>
+  <circle cx="560" cy="270" r="105" fill="url(#planet)"/>
+  <path d="M440 300 A190 40 -14 0 0 680 250" fill="none" stroke="#ffd1ec" stroke-width="10" opacity=".7" transform="rotate(0)"/>
+  <circle cx="140" cy="470" r="46" fill="#3c4a8f"/>
+  <circle cx="126" cy="456" r="10" fill="#2e3a73"/>
+</svg>

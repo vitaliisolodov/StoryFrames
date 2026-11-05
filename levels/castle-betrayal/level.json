@@ -1,0 +1,86 @@
+{
+  "title": "Зрада в замку",
+  "description": "Король, лицар, злодій і чарівник. Хто в кінці опиниться на троні?",
+  "howto": "Обери персонажа або декорацію внизу, потім торкнись кадру (або перетягни мишею). Торкнись заповненої комірки, щоб прибрати її.",
+  "author": "Приклад",
+  "difficulty": 1,
+  "order": 10,
+  "icon": "🏰",
+  "charSlots": 2,
+  "hint": "Подумай, де кожен герой має бути вранці, вдень і ввечері.",
+
+  "frames": [
+    { "title": "Ранок" },
+    { "title": "Полудень" },
+    { "title": "Ніч" }
+  ],
+
+  "characters": [
+    { "id": "king",   "name": "Король",    "emoji": "👑" },
+    { "id": "knight", "name": "Лицар",     "emoji": "🛡️" },
+    { "id": "thief",  "name": "Злодій",    "emoji": "🦹" },
+    { "id": "wizard", "name": "Чарівник",  "emoji": "🧙" }
+  ],
+
+  "settings": [
+    { "id": "castle", "name": "Замок",  "emoji": "🏰", "color": "linear-gradient(160deg,#4b4f7a,#2b2d4a)" },
+    { "id": "forest", "name": "Ліс",    "emoji": "🌲", "color": "linear-gradient(160deg,#2f6b45,#173a28)" },
+    { "id": "tavern", "name": "Таверна","emoji": "🍺", "color": "linear-gradient(160deg,#8a5a2b,#4a2e14)" }
+  ],
+
+  "captions": [
+    { "frame": 0, "setting": "castle", "characters": ["king"], "text": "Король оглядає свої володіння." },
+    { "frame": 1, "setting": "forest", "characters": ["thief", "knight"], "text": "Лицар наздоганяє злодія серед дерев." },
+    { "frame": 1, "setting": "castle", "characters": ["thief"], "text": "Хтось нишпорить у тронній залі…" },
+    { "frame": 2, "setting": "castle", "characters": ["wizard"], "text": "У замку зʼявляється таємничий гість." }
+  ],
+
+  "endings": [
+    {
+      "id": "justice",
+      "title": "Справедливість",
+      "text": "Лицар упіймав злодія в лісі й повернув його до замку. Король вдячний — порядок відновлено.",
+      "clue": "Король у замку, лицар наздоганяє злодія, а ввечері вони разом.",
+      "frames": [
+        { "setting": "castle", "characters": ["king"] },
+        { "setting": "forest", "characters": ["thief", "knight"] },
+        { "setting": "castle", "characters": ["king", "knight"] }
+      ]
+    },
+    {
+      "id": "theft",
+      "title": "Корона зникла",
+      "text": "Злодій пробрався до замку, поцупив корону й зник у лісі. Ніхто його не зупинив.",
+      "clue": "Що буде, якщо лицаря не буде поруч?",
+      "frames": [
+        { "setting": "castle", "characters": ["king"] },
+        { "setting": "castle", "characters": ["thief"] },
+        { "setting": "forest", "characters": ["thief"] }
+      ]
+    },
+    {
+      "id": "thief-throne",
+      "title": "Злодій на троні",
+      "hidden": true,
+      "text": "Король переодягнувся й пішов у народ, але в таверні зустрів не того співрозмовника. Вранці на троні сидів злодій.",
+      "clue": "Іноді королю краще не залишати замок.",
+      "frames": [
+        { "setting": "forest", "characters": ["king"] },
+        { "setting": "tavern", "characters": ["king", "thief"] },
+        { "setting": "castle", "characters": ["thief"], "exact": true }
+      ]
+    },
+    {
+      "id": "wizard-rule",
+      "title": "Влада чарівника",
+      "hidden": true,
+      "text": "Поки всі гралися в хованки, чарівник тихо прибрав владу до рук.",
+      "clue": "Подивись, хто може опинитись у замку наприкінці.",
+      "frames": [
+        null,
+        null,
+        { "setting": "castle", "characters": ["wizard"] }
+      ]
+    }
+  ]
+}

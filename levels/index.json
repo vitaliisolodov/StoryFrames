@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-11-01T19:03:39.776Z",
+  "levels": [
+    {
+      "id": "castle-betrayal",
+      "title": "Зрада в замку",
+      "description": "Король, лицар, злодій і чарівник. Хто в кінці опиниться на троні?",
+      "author": "Приклад",
+      "difficulty": 1,
+      "order": 10,
+      "icon": "🏰",
+      "cover": "",
+      "frames": 3,
+      "endings": 4,
+      "hiddenEndings": 2
+    },
+    {
+      "id": "film-set",
+      "title": "Знімальний майданчик",
+      "description": "Знімальна група, дракон і робот. Зніми фільм, який отримає Оскар — або вийде зовсім не так.",
+      "author": "Приклад",
+      "difficulty": 2,
+      "order": 20,
+      "icon": "",
+      "cover": "cover.svg",
+      "frames": 3,
+      "endings": 5,
+      "hiddenEndings": 2
+    },
+    {
+      "id": "night-museum",
+      "title": "Ніч у музеї",
+      "description": "Сторож, злодійка, кіт і привид, і всі в одному музеї до світанку. Хто винесе діамант «Північна зоря»?",
+      "author": "Claude",
+      "difficulty": 2,
+      "order": 30,
+      "icon": "🏛️",
+      "cover": "cover.svg",
+      "frames": 6,
+      "endings": 7,
+      "hiddenEndings": 3
+    }
+  ]
+}

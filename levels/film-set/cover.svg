@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2f66"/>
+      <stop offset="1" stop-color="#14121a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <circle cx="500" cy="90" r="46" fill="#ffb547" opacity=".9"/>
+  <g transform="translate(170 110) rotate(-6)">
+    <rect x="0" y="40" width="300" height="170" rx="10" fill="#f6f0e3"/>
+    <rect x="0" y="0" width="300" height="46" rx="8" fill="#14121a"/>
+    <g fill="#f6f0e3">
+      <polygon points="14,0 54,0 36,46 -4,46"/>
+      <polygon points="94,0 134,0 116,46 76,46"/>
+      <polygon points="174,0 214,0 196,46 156,46"/>
+      <polygon points="254,0 294,0 276,46 236,46"/>
+    </g>
+    <rect x="22" y="76" width="256" height="8" rx="4" fill="#14121a" opacity=".8"/>
+    <rect x="22" y="102" width="190" height="8" rx="4" fill="#14121a" opacity=".5"/>
+    <rect x="22" y="128" width="220" height="8" rx="4" fill="#14121a" opacity=".5"/>
+  </g>
+  <g fill="#f6f0e3" opacity=".25">
+    <rect x="0" y="0" width="22" height="360"/>
+    <rect x="618" y="0" width="22" height="360"/>
+  </g>
+</svg>

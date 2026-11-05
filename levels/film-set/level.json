@@ -1,0 +1,98 @@
+{
+  "title": "Знімальний майданчик",
+  "description": "Знімальна група, дракон і робот. Зніми фільм, який отримає Оскар — або вийде зовсім не так.",
+  "howto": "Тут декорації — це малюнки з файлів поруч із level.json, а персонажі — емодзі. Так можна змішувати обидва способи.",
+  "author": "Приклад",
+  "difficulty": 2,
+  "order": 20,
+  "cover": "cover.svg",
+  "charSlots": 2,
+  "hint": "Спробуй почати зі студії, а закінчити в іншому місці. Або навпаки.",
+
+  "frames": [
+    { "title": "Підготовка" },
+    { "title": "Зйомки" },
+    { "title": "Фінал" }
+  ],
+
+  "characters": [
+    { "id": "director", "name": "Режисер",  "emoji": "🎬" },
+    { "id": "actor",    "name": "Актор",    "emoji": "🎭" },
+    { "id": "stunt",    "name": "Каскадер", "emoji": "🤸" },
+    { "id": "dragon",   "name": "Дракон",   "emoji": "🐉" },
+    { "id": "robot",    "name": "Робот",    "emoji": "🤖" }
+  ],
+
+  "settings": [
+    { "id": "studio", "name": "Студія",   "image": "studio.svg" },
+    { "id": "desert", "name": "Пустеля",  "image": "desert.svg" },
+    { "id": "space",  "name": "Космос",   "image": "space.svg" }
+  ],
+
+  "captions": [
+    { "frame": 0, "setting": "studio", "characters": ["director"], "text": "Режисер зводить світло й перевіряє сценарій." },
+    { "frame": 1, "setting": "desert", "characters": ["actor", "stunt"], "text": "Каскадер стрибає, актор робить вигляд, що це він." },
+    { "frame": 1, "setting": "studio", "characters": ["dragon"], "text": "Хтось забув попередити, що дракон не з кіно…" },
+    { "frame": 2, "setting": "space", "characters": ["robot"], "text": "Камера повільно відʼїжджає від зірок." }
+  ],
+
+  "endings": [
+    {
+      "id": "oscar",
+      "title": "Оскар за режисуру",
+      "text": "Усе за планом: підготовка в студії, небезпечний епізод у пустелі й урочистий фінал. Критики в захваті.",
+      "clue": "Класичний знімальний процес: студія, пустеля, студія.",
+      "frames": [
+        { "setting": "studio", "characters": ["director"] },
+        { "setting": "desert", "characters": ["actor", "stunt"] },
+        { "setting": "studio", "characters": ["director", "actor"] }
+      ]
+    },
+    {
+      "id": "dragon-chaos",
+      "title": "Дракон на майданчику",
+      "text": "Дракон зʼїв половину декорацій, але глядачі аплодували стоячи — такого спецефекту ще ніхто не бачив.",
+      "clue": "Хто тут точно не за сценарієм?",
+      "frames": [
+        null,
+        { "setting": "studio", "characters": ["dragon"] },
+        null
+      ]
+    },
+    {
+      "id": "robot-director",
+      "title": "Робот-режисер",
+      "text": "Робот сам керує зйомками, монтажем і прем'єрою. Людей у титрах немає.",
+      "clue": "У фіналі студія належить комусь одному.",
+      "frames": [
+        null,
+        { "setting": "studio", "characters": ["robot"] },
+        { "setting": "studio", "characters": ["robot"], "exact": true }
+      ]
+    },
+    {
+      "id": "space-opera",
+      "title": "Кіно в космосі",
+      "hidden": true,
+      "text": "Бюджет закінчився, тож фінал зняли просто на орбіті. Робот і актор зіграли свої найкращі ролі.",
+      "clue": "Найкращий кадр іноді за межами Землі.",
+      "frames": [
+        null,
+        null,
+        { "setting": "space", "characters": ["robot", "actor"] }
+      ]
+    },
+    {
+      "id": "lost-director",
+      "title": "Самотній режисер",
+      "hidden": true,
+      "text": "Група загубилась, і режисер у пустелі знімає документальну драму про самотність.",
+      "clue": "А якщо режисер залишиться сам, подалі від студії?",
+      "frames": [
+        { "setting": "desert", "characters": ["director"], "exact": true },
+        { "setting": "desert", "characters": ["director"], "exact": true },
+        null
+      ]
+    }
+  ]
+}
